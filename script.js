@@ -1,11 +1,17 @@
+let button = document.getElementById('button');// Generate button.
+let firstColor = document.getElementById('first');// First color block.
+let secondColor = document.getElementById('second');// Second color block.
+let thirdColor = document.getElementById('third');// Third color block.
+
+// Class returns array of three string colors.
 class Colors {
 
     constructor() {
     
         // Arrays hold the three seperate color output options.
-        this._first = ["Red", "Blue", "Green"];
-        this._second = ["Black", "White", "Orange"];
-        this._third = ["Pink", "Purple", "Gray"];
+        this._first = ["red", "blue", "green"];
+        this._second = ["black", "brown", "orange"];
+        this._third = ["pink", "purple", "gray"];
     
     }
     
@@ -22,4 +28,23 @@ class Colors {
     } 
 
 }
+
+// Class changes colors of headers in html file.
+const changeColors = () =>  {
+
+    // Intakes array of random colors.
+    let arr = generator.chooseColors();
+
+    // Assigns colors to each color strip.
+    firstColor.style.backgroundColor = arr[0];
+    secondColor.style.backgroundColor = arr[1];
+    thirdColor.style.backgroundColor = arr[2];
+   
+}
+
+let generator = new Colors();// Object used to get new colors.
+
+// Adds click event to generate button.
+button.onclick = changeColors;
+
 
