@@ -29,6 +29,15 @@ class Colors {
 
 }
 
+// Method renames headers with appropriate color names.
+const boxRename = (terms) => {
+
+    firstColor.innerText = terms[0];
+    secondColor.innerText = terms[1];
+    thirdColor.innerText = terms[2];
+
+}
+
 // Class changes colors of headers in html file.
 const changeColors = () =>  {
 
@@ -39,6 +48,8 @@ const changeColors = () =>  {
     firstColor.style.backgroundColor = arr[0];
     secondColor.style.backgroundColor = arr[1];
     thirdColor.style.backgroundColor = arr[2];
+
+    boxRename(arr);// Method renames boxes with colors.
    
 }
 
