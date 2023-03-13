@@ -1,4 +1,4 @@
-# Random Color Generator 🎨
+# [Random Color Generator](https://htmlpreview.github.io/?https://github.com/rayyansarkhot/RandomColorGenerator/blob/main/index.html)🎨
 
 ## Description
 
